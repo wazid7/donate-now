@@ -40,6 +40,10 @@ a {
     padding-top: 100px;
 }
 
+.mt100 {
+    margin-top: 100px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -103,6 +107,7 @@ a {
 .donate-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .donate-list li {
@@ -126,4 +131,118 @@ a {
     color: tomato;
     border: 2px solid #FF5959;
     background-color: #FFEEEE;
+}
+
+.donate-fild {
+    display: flex;
+    justify-content: center;
+
+}
+
+.donate-fild input {
+    width: 700px;
+    text-align: center;
+    height: 35px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none;
+}
+
+.secondBtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+/* plan area style */
+.plan-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.single-plan1 {
+    background: rgba(79, 157, 166, 0.1);
+
+}
+
+.single-plan2 {
+    background: rgba(255, 89, 89, 0.1)
+}
+
+.single-plan3 {
+    background: #FFF4D6;
+
+}
+
+.single-plan {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.single-plan img {
+    width: 58px;
+    height: 49px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.single-plan h4 {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.single-plan p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+}
+
+
+/* subscribe area style */
+.subscribe {
+    width: 700px;
+    background: #FFF4D6;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 60px 100px;
+}
+
+.subscribe input {
+    outline: none;
+    border: navajowhite;
+    height: 50px;
+    width: 300px;
+    padding: 0 24px;
+}
+
+.subscribe button {
+    outline: none;
+    border: none;
+    padding: 0 37px;
+    background: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background: #0B0D17;
+    text-align: center;
+    padding: 42px 0;
+}
+
+footer h2 {
+    font-size: 36px;
+    color: tomato;
+}
+
+footer p {
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
 }
