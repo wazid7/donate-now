@@ -53,11 +53,15 @@ a {
     background-position: center;
     background-size: cover;
     height: 100vh;
+
+}
+
+.overley {
     position: relative;
     z-index: 999;
 }
 
-.hero-area::after {
+.overley::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -87,7 +91,7 @@ a {
     font-size: 18px;
     color: white;
     line-height: 28px;
-    padding: 20px 205px;
+    padding: 20px 205px 30px;
 }
 
 /* donate-today style */
@@ -127,7 +131,8 @@ a {
     border: 2px solid transparent;
 }
 
-.donate-list li:hover {
+.donate-list li:hover,
+.active {
     color: tomato;
     border: 2px solid #FF5959;
     background-color: #FFEEEE;
@@ -159,9 +164,7 @@ a {
 
 /* plan area style */
 .plan-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
+    display: flex;
 }
 
 .single-plan1 {
@@ -181,6 +184,8 @@ a {
 .single-plan {
     border-radius: 5px;
     padding: 20px;
+    width: 30%;
+    margin: 0 15px;
 }
 
 .single-plan img {
@@ -201,6 +206,34 @@ a {
     color: #707070;
 }
 
+/* trust-area style */
+.trust-area {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.trust-wrapper {
+    display: flex;
+    padding: 80px 0;
+
+}
+
+.trust-wrapper .section-title p {
+    padding: 0 20px 0 0;
+    color: white;
+}
+
+.trust-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trust-wrapper img {
+    height: 350px;
+    border-radius: 10px;
+}
 
 /* subscribe area style */
 .subscribe {
@@ -212,9 +245,9 @@ a {
     padding: 60px 100px;
 }
 
-.su.subscribe input {
+.subscribe input {
     outline: none;
-    border: navajowhite;
+    border: none;
     height: 50px;
     width: 300px;
     padding: 0 24px;
